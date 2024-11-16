@@ -12,12 +12,10 @@ function Navbar() {
     return (
         <>
 
-            <nav class="navbar navbar-expand-sm navbar-dark p-4">
+            <nav class="navbar navbar-expand-sm position-fixed w-100">
                 <div class="container-fluid">
                     <Link class="navbar-brand" to="/"><img src={websiteLogo} alt='logo' /></Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
