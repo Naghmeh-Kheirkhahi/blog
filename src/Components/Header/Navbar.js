@@ -2,7 +2,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-// import websiteLogo from '..src/Assets/Images/blogLogo.png';
+import websiteLogo from './../../Assets/Images/blogLogo.png';
 
 
 
@@ -14,7 +14,7 @@ function Navbar() {
 
             <nav class="navbar navbar-expand-sm navbar-dark p-4">
                 <div class="container-fluid">
-                    <Link class="navbar-brand" to="/"><img src='' alt='logo' /></Link>
+                    <Link class="navbar-brand" to="/"><img src={websiteLogo} alt='logo' /></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>

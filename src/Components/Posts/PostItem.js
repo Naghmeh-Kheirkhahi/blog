@@ -4,14 +4,14 @@ import './Posts.css';
 
 
 
-function PostItem() {
+function PostItem(props) {
     return (
         <>
-            <div className="col-4 post-container">
+            <div className="col-4 post-container" onClick={props.showPost}>
                 <div className="post">
 
                     <div>
-                        <img src='' alt="..." />
+                        <img src='https://via.placeholder.com/150' alt="..." />
                     </div>
                     
                     <div className="post-info">
@@ -20,16 +20,17 @@ function PostItem() {
                             <p className="post-author">By Author</p>
                         </div>
 
-                        <h3>Title</h3>
-                        <p className="post-description"> Description
-                            {/* {props.description.length > 20 
-                                ? `${props.description.substring(0, 20)}...` 
-                                : props.description} */}
+                        <h3>{props.title}</h3>
+
+                        <p className="post-description"> {props.body}
+                            {/* {props.body.length > 20 
+                                ? `${props.body.substring(0, 20)}...` 
+                                : props.body} */}
                         </p>
 
                         <div className="post-last-info">
-                            <p><i class="fa fa-calendar"></i> Day Month, Year</p>
-                            <p><i class="fa fa-clock-o"></i> ? Min Read</p>
+                            <p><i class="fa fa-calendar"></i> 20 April, 2024</p>
+                            <p><i class="fa fa-clock-o"></i> 10 Min Read</p>
                         </div>
                     </div>
                 </div>

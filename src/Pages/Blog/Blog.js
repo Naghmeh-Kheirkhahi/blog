@@ -1,6 +1,7 @@
 
 import React from "react";
 import './Blog.css';
+import PostList from "./../../Components/Posts/PostList";
 
 
 function Blog() {
@@ -8,6 +9,10 @@ function Blog() {
     <>
       <div>
         <h1>Blog</h1>
+
+        <div>
+          <PostList />
+        </div>
       </div>
     </>
   );

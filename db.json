@@ -1,0 +1,23 @@
+
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "Introduction to React",
+        "image": "https://via.placeholder.com/150",
+        "author": "John Doe",
+        "description": "A beginner's guide to React.",
+        "date": "2024-11-16",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "id": 2,
+        "title": "Understanding JavaScript Closures",
+        "image": "https://via.placeholder.com/150",
+        "author": "Jane Smith",
+        "description": "Deep dive into closures in JavaScript.",
+        "date": "2024-11-15",
+        "content": "Vestibulum vehicula quam vel lectus vehicula, sed venenatis ipsum volutpat."
+      }
+    ]
+  }

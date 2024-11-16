@@ -9,6 +9,7 @@ import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Blog from './Pages/Blog/Blog';
 import Footer from './Components/Footer/Footer';
+import BlogPost from './Pages/Blog/BlogPost';
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Route path='/About' element={<About/>} />  
         <Route path='/Contact' element={<Contact/>} />  
         <Route path='/Blog' element={<Blog/>} />
+
+        <Route path='/post/:postId' element={<BlogPost/>} />
       </Routes>
 
 
