@@ -76,9 +76,8 @@ function Footer() {
 
 
                 <div className="footer-bottom">
-                    <p>© 2021 Crystal Blog by Naghmeh Kheirkhahi. All Rights Reserved.</p>
+                    <p>© 2024 Crystal Blog by Naghmeh Kheirkhahi. All Rights Reserved.</p>
                 </div>
-
             </footer>
 
         </>

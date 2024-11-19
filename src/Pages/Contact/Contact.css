@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    margin: 10rem 0;
+
+}
+
+section h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #512b86;
+    padding: 0.5rem 0;
+}
+
+section p {
+    font-size: 1.3rem;
+}
+
+
+.contact-form {
+    border: 1px solid #9d78c4;
+    border-radius: 10px;
+    background-color: #edddff;
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    color: #6425ae;
+}
+
+.contact-form button {
+    margin: 0 20rem;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid rgb(196 0 206);
+    border-radius: 10px;
+    background-color: rgb(242, 0, 255);
+    color: rgb(255, 255, 255);
+}

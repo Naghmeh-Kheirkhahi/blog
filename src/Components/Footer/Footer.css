@@ -16,6 +16,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-logo img {
@@ -115,13 +116,6 @@ footer {
     font-size: 1.3rem;
     font-weight: 600;
 }
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-us {
+    align-items: center;
+    background-color: rgb(253, 232, 255);
+    padding: 5rem 8rem 10rem 8rem;
+}
+
+.about-us h1 {
+    font-size: 3.5rem;
+    color: #6831b3;
+    font-weight: 900;
+    padding: 0.5rem 0;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #7637cb;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.about-us p {
+    font-size: 1.5rem;
+    color: rgb(61, 61, 61);
+}
+
+.about-us ul {
+    font-size: 1.5rem;
+    color: rgb(61, 61, 61);
+    list-style-type: circle; /* Add this line to show circle bullet points */
+}
+
+.about-us li {
+    padding: 0.5rem 0;
+}
+
+.about-us i {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+
+.about-motto {
+    padding: 10rem 20rem;
+    text-align: center;
+}
+
+.about-motto p {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #512b86;
+    text-shadow: -4px 4px 5px #ca3dda;
+}
+
+.about-motto img {
+    width: 60%;
+    margin-top: 2rem;
+}
+
+
+
+
+.about-team {
+    padding: 10rem;
+    text-align: center;
+}
+
+.about-team h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #492778;
+    text-shadow: none;
+    padding-bottom: 1rem;
+}
+
+.about-team h3 {
+    text-shadow: none;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343434;
+    padding-bottom: 3rem;
+}
+
+.about-team img {
+    border-radius: 10px;
+    border: 2px solid rgb(251, 219, 255);
+}
+
+
+
+
+.about-newsletter {
+    margin: 10rem 20rem 0 20rem;
+    border-radius: 15px;
+    padding: 5rem 0;
+    text-align: center;
+    background-image: url('./../../Assets/Images/newsletter.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-newsletter h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.about-newsletter p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4rem;
+}
+
+.about-newsletter input {
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.about-newsletter button {
+    background-color: rgb(242, 0, 255);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.about-newsletter button:hover {
+    background-color: rgb(205, 0, 216);
+}
+

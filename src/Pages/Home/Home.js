@@ -71,7 +71,6 @@ function Home() {
           <input type="text" placeholder="Enter your email" />
           <button>Subscribe Now</button>
         </form>
-
       </div>
     </>
   );
