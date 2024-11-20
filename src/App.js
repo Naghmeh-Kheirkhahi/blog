@@ -8,6 +8,7 @@ import Contact from './Pages/Contact/Contact';
 import Blog from './Pages/Blog/Blog';
 import Footer from './Components/Footer/Footer';
 import BlogPost from './Pages/Blog/BlogPost';
+import FAQ from './Pages/FAQ';
 
 
 
@@ -26,6 +27,8 @@ function App() {
         <Route path='/Blog' element={<Blog/>} />
 
         <Route path='/post/:postId' element={<BlogPost/>} />
+
+        <Route path='/FAQ' element={<FAQ/>} />
       </Routes>
 
 

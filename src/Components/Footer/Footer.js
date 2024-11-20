@@ -45,19 +45,19 @@ function Footer() {
                     <div className="col-2 footer-list">
                         <h3>Main Links</h3>
                         <ul>
-                            <li><a href="/About">About Us</a></li>
-                            <li><a href="/Contact">Contact Us</a></li>
-                            <li><a href="/Blog">Blog</a></li>
-                            <li><a href="/">FAQ</a></li>
+                            <li><Link to="/About">About Us</Link></li>
+                            <li><Link to="/Contact">Contact Us</Link></li>
+                            <li><Link to="/Blog">Blog</Link></li>
+                            <li><Link to="/FAQ">FAQ</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-2 footer-list">
                         <h3>Sub Links</h3>
                         <ul>
-                            <li><a href="/">Privacy Policy</a></li>
-                            <li><a href="/">Customer Support</a></li>
-                            <li><a href="/">Terms & Conditions</a></li>
+                            <li><Link to="/">Privacy Policy</Link></li>
+                            <li><Link to="/">Customer Support</Link></li>
+                            <li><Link to="/">Terms & Conditions</Link></li>
                         </ul>
                     </div>
 
