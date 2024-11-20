@@ -10,6 +10,8 @@ import Footer from './Components/Footer/Footer';
 import BlogPost from './Pages/Blog/BlogPost';
 import FAQ from './Pages/FAQ/FAQ';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
+import CustmerSupport from './Pages/CustmerSupport/CustmerSupport';
+import TandC from './Pages/TandC/TandC';
 
 
 
@@ -30,8 +32,9 @@ function App() {
         <Route path='/post/:postId' element={<BlogPost/>} />
 
         <Route path='/FAQ' element={<FAQ/>} />
-
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
+        <Route path='/CustomerSupport' element={<CustmerSupport/>} />
+        <Route path='/TandC' element={<TandC/>} />
       </Routes>
 
 
