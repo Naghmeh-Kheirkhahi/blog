@@ -55,9 +55,9 @@ function Footer() {
                     <div className="col-2 footer-list">
                         <h3>Sub Links</h3>
                         <ul>
-                            <li><Link to="/">Privacy Policy</Link></li>
-                            <li><Link to="/">Customer Support</Link></li>
-                            <li><Link to="/">Terms & Conditions</Link></li>
+                            <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
+                            <li><Link to="/CustomerSupport">Customer Support</Link></li>
+                            <li><Link to="/T&C">Terms & Conditions</Link></li>
                         </ul>
                     </div>
 
