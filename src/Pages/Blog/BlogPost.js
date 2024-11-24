@@ -38,7 +38,6 @@ function BlogPost() {
         <h1>Blog Post</h1>
 
         <div className="singlePost">
-
           <img src='https://via.placeholder.com/150'/>
           <h3>{post.title}</h3>
           <p>Author</p>

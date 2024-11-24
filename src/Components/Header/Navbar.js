@@ -3,12 +3,30 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import websiteLogo from './../../Assets/Images/blogLogo.png';
-
+import { useState } from 'react';
 
 
 
 
 function Navbar() {
+
+    const [query, setQuery] = useState('');
+
+
+    const handleSearch = () => {
+        const response= fetch(`/blog?search=${query}`)
+        const data = response.json;
+    }
+
+
+    const handleKeyDown = (e) => {
+        if(e.key === 'Enter'){
+            handleSearch();
+        }
+    }
+
+
+
     return (
         <>
 
@@ -32,8 +50,8 @@ function Navbar() {
                             </li>
                         </ul>
                         <form>
-                            <input type="text" placeholder="Search..."/>
-                            <button type="button"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search..." value={query} onChange={(e)=> setQuery(e.target.value)} onKeyDown={handleKeyDown}/>
+                            <button type="button" onClick={handleSearch}><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>

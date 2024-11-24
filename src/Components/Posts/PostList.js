@@ -37,22 +37,19 @@ function PostList() {
                 <h1>Crystal Blog</h1>
 
                 <div className="row">
-                    {posts.map(item => (
-                        <PostItem 
-                    
-                        title = {item.title}
-                        body = {item.body}
+                    {
+                        posts.map(item => (
+                            <PostItem
 
-                        showPost = {() => {
-                            navigate(`/post/${item.id}`);
-                        }}
+                                title={item.title}
+                                body={item.body}
 
-
-                    />
-                    ))}
-                    
+                                showPost={() => {
+                                    navigate(`/post/${item.id}`);
+                                }}
+                            />
+                        ))}
                 </div>
-
             </div>
         </>
     )

@@ -78,26 +78,64 @@ function About() {
           <h2>Meet Our Team</h2>
           <h3>Leadership & Experienced Team</h3>
 
-          <div>
-            <div className="row mb-5">
-            <div className="col-3"><img src={person1} /></div>
-
-            <div className="col-3"><img src={person2} /></div>
-
-            <div className="col-3"><img src={person3} /></div>
-
-            <div className="col-3"><img src={person4} /></div>
+          <div className="row mb-5">
+            <div class="teamMember col-3">
+              <img src={person1}/>
+              <div class="memberName">
+                <p>Emily Rose Johnson</p>
+              </div>
             </div>
 
+            <div class="teamMember col-3">
+              <img src={person2}/>
+              <div class="memberName">
+                <p>Jonathan Michael Smith</p>
+              </div>
+            </div>
 
-            <div className="row">
-            <div className="col-3"><img src={person5} /></div>
+            <div class="teamMember col-3">
+              <img src={person3}/>
+              <div class="memberName">
+                <p>Sophia Marie Davis</p>
+              </div>
+            </div>
 
-            <div className="col-3"><img src={person6} /></div>
+            <div class="teamMember col-3">
+              <img src={person4}/>
+              <div class="memberName">
+                <p>Olivia Grace Thompson</p>
+              </div>
+            </div>
+          </div>
 
-            <div className="col-3"><img src={person7} /></div>
 
-            <div className="col-3"><img src={person8} /></div>
+          <div className="row">
+            <div class="teamMember col-3">
+              <img src={person5}/>
+              <div class="memberName">
+                <p>Isabella Claire Martinez</p>
+              </div>
+            </div>
+
+            <div class="teamMember col-3">
+              <img src={person6}/>
+              <div class="memberName">
+                <p>Mia Elizabeth Wilson</p>
+              </div>
+            </div>
+
+            <div class="teamMember col-3">
+              <img src={person7}/>
+              <div class="memberName">
+                <p>Ava Charlotte Anderson</p>
+              </div>
+            </div>
+
+            <div class="teamMember col-3">
+              <img src={person8}/>
+              <div class="memberName">
+                <p>Harper Jane Robinson</p>
+              </div>
             </div>
           </div>
         </div>
