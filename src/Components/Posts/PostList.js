@@ -33,8 +33,7 @@ function PostList() {
 
     return (
         <>
-            <div className="post-list-container">
-                <h1>Crystal Blog</h1>
+            <div className="post-list">
 
                 <div className="row">
                     {

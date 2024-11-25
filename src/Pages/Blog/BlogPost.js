@@ -4,6 +4,8 @@ import './Blog.css';
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
+import SinglePost from "../../Assets/Images/blogPost.png";
+
 
 
 
@@ -34,15 +36,23 @@ function BlogPost() {
 
   return (
     <>
-      <div>
-        <h1>Blog Post</h1>
+      <div className="singlePost-container">
+        <h1>Blog Post {post.id}</h1>
 
-        <div className="singlePost">
-          <img src='https://via.placeholder.com/150'/>
+        <div className="singlePost-info">
+          <div className="singlePost-first-info">
+            <p><span>By</span> Author</p>
+            <p><i class="fa fa-calendar"></i> 20 April, 2024</p>
+            <p><i class="fa fa-clock-o"></i> 10 Min Read</p>
+          </div>
+
           <h3>{post.title}</h3>
-          <p>Author</p>
-          <p>Category</p>
-          <p>{post.body}</p>
+
+          <p className="singlePost-category">Category</p>
+
+          <img src={SinglePost} />
+          
+          <p className="singlePost-description">{post.body}</p>
         </div>
       </div>
     </>
