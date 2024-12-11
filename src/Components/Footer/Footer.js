@@ -18,7 +18,7 @@ function Footer() {
                     <div className="col-3">
                         <div className="footer-logo">
                             <img src={websiteLogo} />
-                            <h3>Crystal</h3>
+                            <h3>Crystal Blog</h3>
                         </div>
 
                         <p className="footer-description">Crystal Blog is a blog about crystals. We love crystals and we want to share our knowledge with you. We hope you enjoy our blog.</p>

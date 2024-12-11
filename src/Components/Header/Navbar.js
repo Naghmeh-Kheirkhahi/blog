@@ -29,7 +29,6 @@ function Navbar() {
 
     return (
         <>
-
             <nav class="navbar navbar-expand-sm position-fixed w-100 ps-5 pe-5">
                 <div class="container-fluid">
                     <Link class="navbar-brand" to="/"><img src={websiteLogo} alt='logo' /></Link>
@@ -56,7 +55,6 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-
         </>
     )
 }

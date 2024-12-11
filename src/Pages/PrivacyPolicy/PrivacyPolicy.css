@@ -27,7 +27,7 @@
     color: rgb(60, 60, 60);
     font-size: 1.5rem;
     margin-bottom: 3rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .privacy-policy a {
@@ -38,16 +38,16 @@
 
 .privacy-policy h3 {
     color: rgb(60, 60, 60);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .privacy-policy p {
     margin-left: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .privacy-policy i {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-right: 0.5rem;
 }
