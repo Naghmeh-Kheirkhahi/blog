@@ -12,8 +12,21 @@
     padding: 3rem 5rem 0 5rem;
 }
 
-.post-list div {
-    margin-bottom: 1.5rem;
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 8rem 0;
+}
+
+.categories button {
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(56, 0, 101);
+    background-color: rgb(207, 0, 218);
+    border: 1px solid rgb(169, 0, 177);
+    border-radius: 10px;
 }
 
 
@@ -23,6 +36,7 @@
 .post-container {
     padding: 0 2rem;
     cursor: pointer;
+    margin-bottom: 5rem;
 }
 
 .post-container img {
@@ -59,7 +73,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: rgb(87 48 138);
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     text-shadow: none;
 }
 

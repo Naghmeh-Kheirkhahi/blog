@@ -14,7 +14,7 @@ function PostItem(props) {
                         <img src={BlogPost} alt="..." />
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-4">
                         <div className="post-info">
                             <p className="post-category">Category</p>
                             <p className="post-author"><span>By</span> Author</p>

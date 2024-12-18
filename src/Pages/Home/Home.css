@@ -50,6 +50,7 @@
 
 .postCategories {
     margin-bottom: 10rem;
+    margin-top: 2rem;
 }
 
 .postCategories button {
@@ -62,6 +63,17 @@
     border: 1px solid #ffffff;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.home a {
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3a007b;
+    border: 1px solid rgb(242, 0, 255);
+    border-radius: 10px;    
+    background-color: rgb(244, 43, 255);
+    padding: 1rem 3rem;
 }
 
 

@@ -2,6 +2,7 @@
 
 import React from "react";
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,15 +20,18 @@ function Home() {
           <h4>Advice, Information, Resource</h4>
         </div>
 
-        <div className="postCategories">
-          <button>Category 1</button>
+        {/* <div className="postCategories"> */}
+          {/* <button>Category 1</button>
           <button>Category 2</button>
           <button>Category 3</button>
           <br />
           <button>Category 4</button>
           <button>Category 5</button>
-          <button>Category 6</button>
-        </div>
+          <button>Category 6</button> */}
+          
+          <Link to="/Login">Login</Link>
+          <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        {/* </div> */}
 
       </div>
 

@@ -29,9 +29,9 @@ function Navbar() {
 
     return (
         <>
-            <nav class="navbar navbar-expand-sm position-fixed w-100 ps-5 pe-5">
+            <nav class="navbar navbar-expand-sm position-fixed w-100 ps-2 pe-5">
                 <div class="container-fluid">
-                    <Link class="navbar-brand" to="/"><img src={websiteLogo} alt='logo' /></Link>
+                    <Link class="navbar-brand navLogo" to="/"><img src={websiteLogo} alt='logo' /></Link>
                     
                     <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="navbar-nav me-auto">
@@ -39,7 +39,7 @@ function Navbar() {
                                 <Link class='navLink' to="/">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class='navLink' to="/About">About US</Link>
+                                <Link class='navLink' to="/About">About Us</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class='navLink' to="/Contact">Contact Us</Link>
