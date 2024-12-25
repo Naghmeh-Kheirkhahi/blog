@@ -33,7 +33,6 @@ function BlogPost() {
 
 
 
-
   return (
     <>
       <div className="singlePost-container">

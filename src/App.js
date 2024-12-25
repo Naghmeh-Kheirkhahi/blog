@@ -12,6 +12,7 @@ import FAQ from './Pages/FAQ/FAQ';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import CustmerSupport from './Pages/CustmerSupport/CustmerSupport';
 import TandC from './Pages/TandC/TandC';
+import Category from './Components/Footer/Category';
 
 
 
@@ -35,6 +36,8 @@ function App() {
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
         <Route path='/CustomerSupport' element={<CustmerSupport/>} />
         <Route path='/TandC' element={<TandC/>} />
+
+        <Route path='/Category/:category' element={<Category/>} />
       </Routes>
 
 

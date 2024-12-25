@@ -64,12 +64,12 @@ function Footer() {
                     <div className="col-2 footer-list">
                         <h3>Categories</h3>
                         <ul>
-                            <li><a href="/">Category 1</a></li>
-                            <li><a href="/">Category 2</a></li>
-                            <li><a href="/">Category 3</a></li>
-                            <li><a href="/">Category 4</a></li>
-                            <li><a href="/">Category 5</a></li>
-                            <li><a href="/">Category 6</a></li>
+                            <li><Link to="/Category/Category1">Category 1</Link></li>
+                            <li><Link to="/Category/Category2">Category 2</Link></li>
+                            <li><Link to="/Category/Category3">Category 3</Link></li>
+                            <li><Link to="/Category/Category4">Category 4</Link></li>
+                            <li><Link to="/Category/Category5">Category 5</Link></li>
+                            <li><Link to="/Category/Category6">Category 6</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -135,3 +135,21 @@ footer {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+
+
+/* CSS for Category Componenet */
+
+.categoryPage {
+    align-items: center;
+    text-align: center;
+    margin: 20rem 5rem 10rem 5rem;
+}
+
+.categoryPage h1 {
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+    font-size: 4rem;
+    color: rgb(98, 0, 128);
+    font-weight: 900;
+}
