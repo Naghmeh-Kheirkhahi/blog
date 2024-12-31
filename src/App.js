@@ -13,6 +13,8 @@ import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import CustmerSupport from './Pages/CustmerSupport/CustmerSupport';
 import TandC from './Pages/TandC/TandC';
 import Category from './Components/Footer/Category';
+import Login from './Pages/Login & Register/Login';
+import Register from './Pages/Login & Register/Register';
 
 
 
@@ -38,6 +40,9 @@ function App() {
         <Route path='/TandC' element={<TandC/>} />
 
         <Route path='/Category/:category' element={<Category/>} />
+
+        <Route path='/Login' element={<Login/>} />  
+        <Route path='/Register' element={<Register/>} />  
       </Routes>
 
 
