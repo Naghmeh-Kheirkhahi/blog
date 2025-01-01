@@ -15,6 +15,9 @@ import TandC from './Pages/TandC/TandC';
 import Category from './Components/Footer/Category';
 import Login from './Pages/Login & Register/Login';
 import Register from './Pages/Login & Register/Register';
+import UserPanel from './Pages/UserPanel/UserPanel';
+import PostInfo from './Pages/UserPanel/UserPost/PostInfo';
+import PostPreview from './Pages/UserPanel/UserPost/PostPreview';
 
 
 
@@ -42,7 +45,10 @@ function App() {
         <Route path='/Category/:category' element={<Category/>} />
 
         <Route path='/Login' element={<Login/>} />  
-        <Route path='/Register' element={<Register/>} />  
+        <Route path='/Register' element={<Register/>} /> 
+        <Route path='/UserPanel' element={<UserPanel/>} />
+        <Route path='/UserPanel/PostInfo' element={<PostInfo/>} />  
+        <Route path='/UserPanel/PostPreview' element={<PostPreview/>} />  
       </Routes>
 
 

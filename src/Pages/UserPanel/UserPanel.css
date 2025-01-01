@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.userpanel-page {
+    margin-top: 8rem;
+    background-color: #ffd5fb;
+}
+
+/* ThemeContext */
+/* .dark-user-panel {
+    margin-top: 8rem;
+    background-color: #d9afe2;
+} */
+
+
+/* userpanel navbar (the left side) */
+
+.userpanel-menu {
+    background-color: #d100c0;
+    padding: 5rem 2rem;
+    height: 100%;
+}
+
+/* ThemeContext */
+/* .dark-list {
+    background-color: #350042;
+    padding: 5rem 2rem;
+    height: 100%;
+} */
+
+
+.userpanel-menu h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.userpanel-image {
+    text-align: center;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.userpanel-image img {
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: auto;
+}
+
+.userpanel-image p {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem auto 3rem auto;
+}
+
+
+
+.userpanel-nav ul {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.userpanel-nav ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.userpanel-nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.userpanel-nav ul i {
+    padding: 0.3rem 1rem 0.1rem 0; 
+    margin-bottom: -0.5rem;
+}
+
+
+/* userpanel dashboard (the right side) */
+
+.userpanel-dashboard {
+    padding: 10rem 8rem 5rem 8rem;
+}
+
+.dashboard-description {
+    margin-bottom: 8rem;
+}
+
+.dashboard-description h3 {
+    color: #422b98;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: none;
+}
+
+.dashboard-description p {
+    font-size: 1.8rem;
+}
+
+
+.userpanel-content {
+    text-align: center;
+}
+
+.userpanel-content a {
+    text-decoration: none;
+}
+
+.userpanel-content a p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(72 72 72);
+}
+
+.userpanel-content a i {
+    font-size: 4rem;
+    color: #dd00ca;
+    padding: 1rem 0;
+}
