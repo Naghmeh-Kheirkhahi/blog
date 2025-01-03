@@ -18,6 +18,7 @@ import Register from './Pages/Login & Register/Register';
 import UserPanel from './Pages/UserPanel/UserPanel';
 import PostInfo from './Pages/UserPanel/UserPost/PostInfo';
 import PostPreview from './Pages/UserPanel/UserPost/PostPreview';
+import { PostProvider } from './Context/PostContext';
 
 
 
@@ -26,34 +27,33 @@ import PostPreview from './Pages/UserPanel/UserPost/PostPreview';
 function App() {
   return (
     <>
-      
-      <Navbar/>
+      <PostProvider>
+        <Navbar />
 
-      <Routes>
-        <Route path='/' element={<Home/>} /> 
-        <Route path='/About' element={<About/>} />  
-        <Route path='/Contact' element={<Contact/>} />  
-        <Route path='/Blog' element={<Blog/>} />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Blog' element={<Blog />} />
 
-        <Route path='/post/:postId' element={<BlogPost/>} />
+          <Route path='/post/:postId' element={<BlogPost />} />
 
-        <Route path='/FAQ' element={<FAQ/>} />
-        <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
-        <Route path='/CustomerSupport' element={<CustmerSupport/>} />
-        <Route path='/TandC' element={<TandC/>} />
+          <Route path='/FAQ' element={<FAQ />} />
+          <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
+          <Route path='/CustomerSupport' element={<CustmerSupport />} />
+          <Route path='/TandC' element={<TandC />} />
 
-        <Route path='/Category/:category' element={<Category/>} />
+          <Route path='/Category/:category' element={<Category />} />
 
-        <Route path='/Login' element={<Login/>} />  
-        <Route path='/Register' element={<Register/>} /> 
-        <Route path='/UserPanel' element={<UserPanel/>} />
-        <Route path='/UserPanel/PostInfo' element={<PostInfo/>} />  
-        <Route path='/UserPanel/PostPreview' element={<PostPreview/>} />  
-      </Routes>
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Register' element={<Register />} />
+          <Route path='/UserPanel' element={<UserPanel />} />
+          <Route path='/UserPanel/PostInfo' element={<PostInfo />} />
+          <Route path='/UserPanel/PostPreview' element={<PostPreview />} />
+        </Routes>
 
-
-      <Footer/>
-
+        <Footer />
+      </PostProvider>
 
     </>
   );

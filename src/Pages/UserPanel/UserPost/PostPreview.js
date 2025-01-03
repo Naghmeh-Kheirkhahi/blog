@@ -1,11 +1,15 @@
 
-import React from "react";
+import React, { useContext } from "react";
 import "./UserPost.css";
 import UserPanelNav from "../UserPanelNav";
 import BlogPost from "../../../Assets/Images/blogPost.png";
+import { PostContext } from "../../../Context/PostContext";
 
 
 function PostPreview() {
+
+    const { post } = useContext(PostContext);
+
 
     return (
         <>
@@ -21,22 +25,22 @@ function PostPreview() {
 
                             <div className="post-preview">
                                 <div>
-                                    <img src={BlogPost} alt="blog post" />
+                                    <img src={post.image || BlogPost} alt="blog post" />
                                 </div>
 
                                 <div className="pt-4">
                                     <div className="post-pre-info">
-                                        <p className="post-pre-category">Category</p>
-                                        <p className="post-pre-author"><span>By</span> Author</p>
+                                        <p className="post-pre-category">{post.category || 'Category'}</p>
+                                        <p className="post-pre-author"><span>By</span> {post.author || 'Author'}</p>
                                     </div>
 
-                                    <h3>Title</h3>
+                                    <h3>{post.title || 'Title'}</h3>
 
-                                    <p className="post-pre-description">Description</p>
+                                    <p className="post-pre-description">{post.description || 'Description...'}</p>
 
                                     <div className="post-pre-date">
-                                        <p><i class="fa fa-calendar"></i> Date</p>
-                                        <p><i class="fa fa-clock-o"></i> ? Min Read Time</p>
+                                        <p><i class="fa fa-calendar"></i> {post.date || 'Date'}</p>
+                                        <p><i class="fa fa-clock-o"></i> {post.readTime || '?'} Min Read Time</p>
                                     </div>
                                 </div>
                             </div>
