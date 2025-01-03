@@ -11,12 +11,6 @@
     background-color: #f5c7ff;
 }
 
-/* ThemeContext */
-/* .dark-main-page{
-    margin-top: 8rem;
-    background-color: #f5c7ff;
-} */
-
 
 .main-container {
     padding: 8rem;
@@ -80,19 +74,6 @@
     color: #ffffff;
     border-radius: 10px;
 }
-
-/* ThemeContext */
-/* .dark-btn {
-    width: 100%;
-    padding: 1rem 0;
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin: 1.5rem auto 0 auto;
-    background-color: #6327d2; 
-    border: none;
-    color: #ffffff;
-    border-radius: 10px;
-} */
 
 
 

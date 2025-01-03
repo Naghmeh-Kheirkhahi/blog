@@ -8,6 +8,7 @@
 
 footer {
     background-color: #4c31ae;
+    border-top: 1px solid #815eff;
     color: white;
     padding: 5rem 10rem 2rem 10rem;
 }
@@ -20,7 +21,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
     margin-left: 0;
 }

@@ -15,14 +15,13 @@ function PostPreview() {
                         <UserPanelNav />
                     </div>
 
-
                     <div className="col-9">
                         <div className="main-container">
                             <h1>My Preview Post</h1>
 
                             <div className="post-preview">
                                 <div>
-                                    <img src={BlogPost} alt="blog post"/>
+                                    <img src={BlogPost} alt="blog post" />
                                 </div>
 
                                 <div className="pt-4">

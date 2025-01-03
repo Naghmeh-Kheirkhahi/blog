@@ -1,7 +1,7 @@
 
 nav {
-   background-color: #4c31ae;
-   border-bottom: 1px solid #8765ff;
+   background-color: #462aad;
+   border-bottom: 1px solid #815eff;
    z-index: 1; /* in order to prevent form overlapping the navbar and the team part of About us, we need to give navbar this css */
 }
 

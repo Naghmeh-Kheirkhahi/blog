@@ -15,7 +15,6 @@ function PostInfo() {
                         <UserPanelNav />
                     </div>
 
-
                     <div className="col-9">
                         <div className="main-container">
                             <h1>My Post Information</h1>
@@ -25,7 +24,7 @@ function PostInfo() {
                             <form className="postInfo-form">
 
                                 <label for="Image">Image</label>
-                                <input type="file" className="ps-0 "/>
+                                <input type="file" className="ps-0" />
 
                                 <label for="Author">Title</label>
                                 <input type="text" />
