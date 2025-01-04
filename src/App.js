@@ -19,6 +19,8 @@ import UserPanel from './Pages/UserPanel/UserPanel';
 import PostInfo from './Pages/UserPanel/UserPost/PostInfo';
 import PostPreview from './Pages/UserPanel/UserPost/PostPreview';
 import { PostProvider } from './Context/PostContext';
+import { UserProvider } from './Context/UserContext';
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 
 
 
@@ -27,6 +29,7 @@ import { PostProvider } from './Context/PostContext';
 function App() {
   return (
     <>
+    <UserProvider>
       <PostProvider>
         <Navbar />
 
@@ -47,14 +50,17 @@ function App() {
 
           <Route path='/Login' element={<Login />} />
           <Route path='/Register' element={<Register />} />
-          <Route path='/UserPanel' element={<UserPanel />} />
-          <Route path='/UserPanel/PostInfo' element={<PostInfo />} />
-          <Route path='/UserPanel/PostPreview' element={<PostPreview />} />
+
+          <Route path='/UserPanel' element={<ProtectedRoute />}>
+            <Route path='/UserPanel' element={<UserPanel />} />
+            <Route path='PostInfo' element={<PostInfo />} />
+            <Route path='PostPreview' element={<PostPreview />} />
+          </Route>
         </Routes>
 
         <Footer />
       </PostProvider>
-
+    </UserProvider>
     </>
   );
 }

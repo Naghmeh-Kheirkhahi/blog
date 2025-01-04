@@ -1,25 +1,41 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
+import { UserContext } from '../../Context/UserContext';
+
 
 function Register() {
+
+    const { setUsername } = useContext(UserContext);
     const navigate = useNavigate();
-    const [username, setUsername] = useState('');
+
+    const [localUsername, setLocalUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your registration logic here
-        console.log('Username:', username);
-        console.log('Email:', email);
-        console.log('Password:', password);
-        console.log('Confirm Password:', confirmPassword);
-        // Navigate to the home page after successful registration
-        navigate('/');
-    };
+
+        console.log('Username:', localUsername); console.log('Email:', email); console.log('Password:', password); console.log('Confirm Password:', confirmPassword);
+
+        if (localUsername !== '' && email !== '' && password !== '' && confirmPassword !== '') {
+
+            if (password !== confirmPassword) {
+                alert("The Passwords do not match. Please try again!");
+                return;
+            }
+
+            setUsername(localUsername);
+            alert("Your Registration has been Successfully done!");
+            navigate("/Login");
+
+        } else {
+            alert("Please fill all the fields!");
+        }
+    }
+
 
     return (
         <>
@@ -32,8 +48,8 @@ function Register() {
                             <input
                                 type="text"
                                 id="username"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
+                                value={localUsername}
+                                onChange={(e) => setLocalUsername(e.target.value)}
                                 required
                             />
                         </div>

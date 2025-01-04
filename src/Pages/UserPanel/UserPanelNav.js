@@ -1,12 +1,16 @@
 
-import React from "react";
+import react, {useContext} from 'react';
 import "./UserPanel.css";
 import { Link } from "react-router-dom";
 import userImage from "../../Assets/Images/userImage.jpg"
+import { UserContext } from '../../Context/UserContext';
 
 
 
 function UserPanelNav() {
+
+    const { username } = useContext(UserContext);
+
     return (
         <>
             <div className="userpanel-menu">
@@ -14,7 +18,7 @@ function UserPanelNav() {
 
                 <div className="userpanel-image">
                     <img src={userImage} alt="user image" />
-                    <p>Username</p>
+                    <p>{username}</p>
                 </div>
 
                 <div className="userpanel-nav">

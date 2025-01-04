@@ -7,16 +7,23 @@ import { Link } from 'react-router-dom';
 
 
 function Login() {
+
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your login logic here
-        console.log('Email:', email);
-        console.log('Password:', password);
-        // Navigate to the home page after successful login
+
+        console.log('Email:', email); console.log('Password:', password);
+
+        if (email === '' || password === '') {
+            alert('Please fill all the fields!');
+            return;
+        }
+
+        alert("Login has been successfully done!");
         navigate('/UserPanel');
     };
 
