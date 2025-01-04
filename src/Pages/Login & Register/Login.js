@@ -1,28 +1,36 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../Context/UserContext';
 
 
 
 function Login() {
 
+    const { setUsername, setEmail } = useContext(UserContext);
     const navigate = useNavigate();
-    const [email, setEmail] = useState('');
+
+    const [localUsername, setLocalUsername] = useState('');
+    const [localEmail, setLocalEmail] = useState('');
     const [password, setPassword] = useState('');
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log('Email:', email); console.log('Password:', password);
+        console.log('Username:', localUsername); console.log('Email:', localEmail); console.log('Password:', password);
 
-        if (email === '' || password === '') {
+        if (localUsername === '' || localEmail === '' || password === '') {
             alert('Please fill all the fields!');
             return;
         }
 
+        // localStorage.setItem('email', localEmail);
+        // localStorage.setItem('username', localUsername); we used useEffect in UserContext.js to store the data in local storage, so we don't need to store it here
+        setUsername(localUsername);
+        setEmail(localEmail);
         alert("Login has been successfully done!");
         navigate('/UserPanel');
     };
@@ -34,12 +42,23 @@ function Login() {
                     <h2>Login</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
+                            <label htmlFor="username">Username:</label>
+                            <input
+                                type="text"
+                                id="username"
+                                value={localUsername}
+                                onChange={(e) => setLocalUsername(e.target.value)}
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
                             <label htmlFor="email">Email:</label>
                             <input
                                 type="email"
                                 id="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={localEmail}
+                                onChange={(e) => setLocalEmail(e.target.value)}
                                 required
                             />
                         </div>

@@ -7,27 +7,30 @@ import { UserContext } from '../../Context/UserContext';
 
 function Register() {
 
-    const { setUsername } = useContext(UserContext);
+    const { setUsername, setEmail } = useContext(UserContext);
     const navigate = useNavigate();
 
     const [localUsername, setLocalUsername] = useState('');
-    const [email, setEmail] = useState('');
+    const [localEmail, setLocalEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log('Username:', localUsername); console.log('Email:', email); console.log('Password:', password); console.log('Confirm Password:', confirmPassword);
+        console.log('Username:', localUsername); console.log('Email:', localEmail); console.log('Password:', password); console.log('Confirm Password:', confirmPassword);
 
-        if (localUsername !== '' && email !== '' && password !== '' && confirmPassword !== '') {
+        if (localUsername !== '' && localEmail !== '' && password !== '' && confirmPassword !== '') {
 
             if (password !== confirmPassword) {
                 alert("The Passwords do not match. Please try again!");
                 return;
             }
 
+            // localStorage.setItem('username', localUsername);
+            // localStorage.setItem('email', localEmail); we used useEffect in UserContext.js to store the data in local storage, so we don't need to store it here
             setUsername(localUsername);
+            setEmail(localEmail);
             alert("Your Registration has been Successfully done!");
             navigate("/Login");
 
@@ -58,8 +61,8 @@ function Register() {
                             <input
                                 type="email"
                                 id="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={localEmail}
+                                onChange={(e) => setLocalEmail(e.target.value)}
                                 required
                             />
                         </div>

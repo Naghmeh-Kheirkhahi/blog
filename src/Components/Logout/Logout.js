@@ -8,9 +8,22 @@ import { useNavigate } from "react-router-dom";
 
 
 function Logout() {
+
+    const { setUsername, setEmail } = useContext(UserContext);
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        setUsername('');
+        setEmail('');
+        localStorage.removeItem('username');
+        localStorage.removeItem('email');
+        navigate('/Login');
+    }
+
+
     return (
         <>
-            <h1>Logout</h1>
+            <Link onClick={handleLogout}><i class="fa fa-sign-out"></i><p> Log out</p></Link>
         </>
     );
 }

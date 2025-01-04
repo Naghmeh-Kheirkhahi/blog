@@ -4,6 +4,7 @@ import "./UserPanel.css";
 import { Link } from "react-router-dom";
 import userImage from "../../Assets/Images/userImage.jpg"
 import { UserContext } from '../../Context/UserContext';
+import Logout from '../../Components/Logout/Logout';
 
 
 
@@ -26,7 +27,7 @@ function UserPanelNav() {
                         <li><Link to='/UserPanel'><i class="fa fa-dashboard"></i> <p>My Dashboard</p></Link></li>
                         <li><Link to='/UserPanel/PostInfo'><i class='fa fa-info-circle'></i> <p>Post Information</p></Link></li>
                         <li><Link to='/UserPanel/PostPreview'><i class='fa fa-blog'></i> <p>Post Preview</p></Link></li>
-                        <li><Link to='/Login'><i class="fa fa-sign-out"></i> <p>Log out</p></Link></li>
+                        <li><Logout /></li>
                     </ul>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import "./UserPanel.css";
 import { Link } from "react-router-dom";
 import UserPanelNav from './UserPanelNav';
 import { UserContext } from '../../Context/UserContext';
+import Logout from '../../Components/Logout/Logout';
 
 
 
@@ -40,8 +41,7 @@ function UserPanel() {
                                     </div>
 
                                     <div className="col-4 p-5">
-                                        <Link to='/Login'><i class="fa fa-sign-out"></i>
-                                            <p>Log out</p></Link>
+                                        <Logout />
                                     </div>
                                 </div>
                             </div>
