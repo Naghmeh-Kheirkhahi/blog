@@ -55,9 +55,21 @@ nav form button:hover {
 
 .navLink {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0 2rem;
 }
 
+.navLogin {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(255 48 131);
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+.navLogin i {
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    margin-bottom: -0.2rem;
+}
