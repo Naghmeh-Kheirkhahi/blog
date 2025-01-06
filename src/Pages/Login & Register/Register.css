@@ -8,6 +8,20 @@
     background-color: rgb(239, 239, 239);
 }
 
+.prelogged {
+    max-width: 60%;
+    margin: 20rem auto 10rem auto;
+    padding: 10rem 8rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #a1005b;
+    border: 1px solid rgb(186, 134, 219);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(169 169 169);
+    background-color: rgb(214, 164, 244);
+}
+
 .register-container {
     max-width: 40%;
     margin: 20rem auto 10rem auto;

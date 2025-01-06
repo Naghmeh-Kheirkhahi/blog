@@ -7,7 +7,7 @@ import { UserContext } from '../../Context/UserContext';
 
 function Register() {
 
-    const { setUsername, setEmail } = useContext(UserContext);
+    const { username, setUsername, setEmail } = useContext(UserContext);
     const navigate = useNavigate();
 
     const [localUsername, setLocalUsername] = useState('');
@@ -43,52 +43,61 @@ function Register() {
     return (
         <>
             <div className="register-page">
-                <div className="register-container">
-                    <h2>Register</h2>
-                    <form onSubmit={handleSubmit}>
-                        <div className="form-group">
-                            <label htmlFor="username">Username:</label>
-                            <input
-                                type="text"
-                                id="username"
-                                value={localUsername}
-                                onChange={(e) => setLocalUsername(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email:</label>
-                            <input
-                                type="email"
-                                id="email"
-                                value={localEmail}
-                                onChange={(e) => setLocalEmail(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="password">Password:</label>
-                            <input
-                                type="password"
-                                id="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="confirmPassword">Confirm Password:</label>
-                            <input
-                                type="password"
-                                id="confirmPassword"
-                                value={confirmPassword}
-                                onChange={(e) => setConfirmPassword(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+
+                {username ? (
+                    <div className='prelogged'>
+                        <p>You have already Logged in as a User.</p>
+                        <p>To access the Login Form, please Log out first.</p>
+                    </div>
+                ) : (
+                    <div className="register-container">
+                        <h2>Register</h2>
+                        <form onSubmit={handleSubmit}>
+                            <div className="form-group">
+                                <label htmlFor="username">Username:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    value={localUsername}
+                                    onChange={(e) => setLocalUsername(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={localEmail}
+                                    onChange={(e) => setLocalEmail(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password:</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="confirmPassword">Confirm Password:</label>
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    value={confirmPassword}
+                                    onChange={(e) => setConfirmPassword(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+                )}
+
             </div>
         </>
     );
