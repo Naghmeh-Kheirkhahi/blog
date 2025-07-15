@@ -54,7 +54,7 @@ function Navbar() {
                                 <Link className="nav-link" to="/Contact">Contact Us</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class='navLink' to="/Blog">Blog</Link>
+                                <Link class='nav-link' to="/Blog">Blog</Link>
                             </li>
                         </ul>
 
