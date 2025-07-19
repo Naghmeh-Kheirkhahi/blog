@@ -43,17 +43,19 @@
 }
 
 .nav-item a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
+}
+
+.nav-item a:visited,
+.nav-item a:active,
+.nav-item a:focus {
+    color: white;
+    outline: none;
 }
 
 .nav-item a:hover {
     color: rgb(240, 240, 240);
-}
-
-.nav-item a i {
-    margin-bottom: -0.2rem;
-    padding: 0.1rem;
 }
 
 form {
@@ -137,6 +139,7 @@ form {
     .navLogin {
         font-size: 1rem;
         padding-right: 2rem;
+        padding-top: 0.2rem;
     }
 }
 
