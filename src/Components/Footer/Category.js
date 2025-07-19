@@ -57,8 +57,6 @@ function Category() {
 
 
 
-
-
     return (
         <>
             <div className="categoryPage">
