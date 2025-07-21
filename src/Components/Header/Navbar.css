@@ -155,10 +155,6 @@ form {
     form {
         margin: 1rem 0;
     }
-
-    .navLogin {
-        padding: 0;
-    }
 }
 
 @media (max-width: 850px) {

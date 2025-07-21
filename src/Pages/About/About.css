@@ -1,39 +1,36 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-about-us {
+    background-color: rgb(253, 232, 255);
 }
 
 .about-us {
     align-items: center;
-    background-color: rgb(253, 232, 255);
-    padding: 5rem 8rem 10rem 8rem;
+    padding: 15rem 8rem 10rem 8rem;
 }
 
 .about-us h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #6831b3;
     font-weight: 900;
     padding: 0.5rem 0;
 }
 
 .about-us h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #7637cb;
     font-weight: 700;
     padding: 0.5rem 0;
 }
 
 .about-us p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(61, 61, 61);
 }
 
 .about-us ul {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(61, 61, 61);
-    list-style-type: circle; /* Add this line to show circle bullet points */
+    list-style-type: circle;
+    /* Add this line to show circle bullet points */
 }
 
 .about-us li {
@@ -41,18 +38,20 @@
 }
 
 .about-us i {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 0.5rem 0.5rem 0.1rem 0;
 }
 
 
 .about-motto {
-    padding: 10rem 20rem;
+    padding: 8rem 15rem;
     text-align: center;
+    border-top: 1px solid rgb(165, 165, 165);
+    border-bottom: 1px solid rgb(165, 165, 165);
 }
 
 .about-motto p {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     color: #512b86;
     text-shadow: -4px 4px 5px #ca3dda;
@@ -64,11 +63,10 @@
 }
 
 
-
-
 .about-team {
-    padding: 10rem;
+    padding: 8rem;
     text-align: center;
+    border-bottom: 1px solid rgb(165, 165, 165);
 }
 
 .about-team h2 {
@@ -76,24 +74,23 @@
     font-weight: 700;
     color: #492778;
     text-shadow: none;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about-team h3 {
     text-shadow: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #343434;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
-
 
 
 .teamMember {
     position: relative;
-  }
-  
-  .teamMember img {
+}
+
+.teamMember img {
     border-radius: 10px;
     border: 2px solid rgb(251, 219, 255);
     opacity: 1;
@@ -102,9 +99,9 @@
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .memberName {
+}
+
+.memberName {
     position: absolute;
     transition: .5s ease;
     opacity: 0;
@@ -114,44 +111,45 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     animation: moving 1s ease;
-  }
-  
-  .teamMember img:hover {
+}
+
+.teamMember img:hover {
     opacity: 0.5;
-  }
-  
-  .teamMember:hover .memberName {
+}
+
+.teamMember:hover .memberName {
     opacity: 1;
-  }
-  
-  .memberName p {
+}
+
+.memberName p {
     color: rgb(43, 43, 43);
     font-size: 1.8rem;
     font-weight: 700;
     cursor: pointer;
-  }
+}
 
-  .memberName:hover {
+.memberName:hover {
     background-color: rgba(255, 255, 255, 0.4);
-    width: 95%;
+    width: 100%;
     height: 100%;
-    padding: 10rem 6rem 0 6rem;
-  }
+    padding: 4rem 3rem 0 3rem;
+}
 
-  @keyframes moving {
-    from{transform: translateY(1rem);}
-    to{transform: translateY(0);}
-  }
+@keyframes moving {
+    from {
+        transform: translateY(1rem);
+    }
 
-
-
-
+    to {
+        transform: translateY(0);
+    }
+}
 
 
 .about-newsletter {
-    margin: 10rem 20rem 0 20rem;
+    margin: 8rem 12rem 0 12rem;
     border-radius: 15px;
-    padding: 5rem 0;
+    padding: 4rem 0;
     text-align: center;
     background-image: url('./../../Assets/Images/newsletter.JPG');
     background-size: cover;
@@ -160,18 +158,18 @@
 }
 
 .about-newsletter h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 1rem 0;
 }
 
 .about-newsletter p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .about-newsletter input {
@@ -180,9 +178,10 @@
     border-radius: 10px;
     padding: 1rem 1.5rem;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #444444;
+    text-align: center;
 }
 
 .about-newsletter button {
@@ -192,7 +191,7 @@
     border-radius: 10px;
     padding: 1rem 1.5rem;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-left: 1rem;
 }
@@ -201,3 +200,450 @@
     background-color: rgb(205, 0, 216);
 }
 
+
+
+@media(max-width: 1400px) {
+    .about-us {
+        padding: 12rem 7rem 6rem 7rem;
+    }
+
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+    }
+
+    .about-us ul {
+        font-size: 1.2rem;
+    }
+
+
+    .about-motto {
+        padding: 6rem 10rem;
+    }
+
+    .about-motto p {
+        font-size: 3.5rem;
+    }
+
+
+    .about-team {
+        padding: 6rem;
+    }
+
+    .about-team h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-team h3 {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+
+    .memberName p {
+        font-size: 1.5rem;
+    }
+
+    .memberName:hover {
+        width: 90%;
+        padding: 3rem 2rem 0 2rem;
+    }
+
+
+    .about-newsletter {
+        margin: 6rem 10rem 0 10rem;
+        padding: 3rem 0;
+    }
+
+    .about-newsletter h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-newsletter p {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .about-newsletter input {
+        font-size: 1.1rem;
+    }
+
+    .about-newsletter button {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .about-us {
+        padding: 10rem 6rem 5rem 6rem;
+    }
+
+    .about-us h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+    }
+
+    .about-us ul {
+        font-size: 1.1rem;
+        margin-left: -1rem;
+    }
+
+
+    .about-motto {
+        padding: 5rem 8rem;
+    }
+
+    .about-motto p {
+        font-size: 3rem;
+    }
+
+    .about-motto img {
+        width: 65%;
+        margin-top: 1.5rem;
+    }
+
+
+    .about-team {
+        padding: 5rem;
+    }
+
+    .about-team h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-team h3 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+
+    .memberName p {
+        font-size: 1.2rem;
+    }
+
+    .memberName:hover {
+        width: 85%;
+        padding: 2rem 1rem 0 1rem;
+    }
+
+
+    .about-newsletter {
+        margin: 5rem 8rem 0 8rem;
+        padding: 3rem 0;
+    }
+
+    .about-newsletter h2 {
+        font-size: 2rem;
+    }
+
+    .about-newsletter p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-newsletter input {
+        width: 35%;
+        font-size: 1rem;
+    }
+
+    .about-newsletter button {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .about-us {
+        padding: 10rem 5rem 5rem 5rem;
+    }
+
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-us ul {
+        font-size: 1rem;
+        margin-left: -1rem;
+    }
+
+    .about-us i {
+        font-size: 0.4rem;
+    }
+
+
+    .about-motto {
+        padding: 4rem 6rem;
+    }
+
+    .about-motto p {
+        font-size: 2.5rem;
+    }
+
+    .about-motto img {
+        width: 70%;
+    }
+
+
+    .about-team {
+        padding: 4rem;
+    }
+
+    .about-team h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-team h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .memberName p {
+        font-size: 1rem;
+    }
+
+    .memberName:hover {
+        width: 85%;
+        padding: 3rem 1rem 0 1rem;
+    }
+
+
+    .about-newsletter {
+        margin: 4rem 5rem 0 5rem;
+        padding: 2rem 0;
+    }
+
+    .about-newsletter h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-newsletter p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-newsletter input {
+        width: 40%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .about-newsletter button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .memberName p {
+        font-size: 1.5rem;
+    }
+
+    .memberName:hover {
+        width: 95%;
+        padding: 4rem 1rem 0 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-us {
+        padding: 8rem 4rem 4rem 4rem;
+    }
+
+    .about-us h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.1rem;
+    }
+
+    .about-us p {
+        font-size: 0.9rem;
+    }
+
+    .about-us ul {
+        font-size: 0.9rem;
+        margin-left: -0.5rem;
+    }
+
+
+    .about-motto {
+        padding: 3rem 5rem;
+    }
+
+    .about-motto p {
+        font-size: 2rem;
+    }
+
+    .about-motto img {
+        width: 75%;
+        margin-top: 1rem;
+    }
+
+
+    .about-team {
+        padding: 3rem;
+    }
+
+    .about-team h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-team h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .memberName p {
+        font-size: 1.2rem;
+    }
+
+    .memberName:hover {
+        width: 85%;
+    }
+
+
+    .about-newsletter {
+        margin: 3rem 2rem 0 2rem;
+        padding: 1.5rem 0;
+    }
+
+    .about-newsletter h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-newsletter p {
+        font-size: 0.8rem;
+    }
+
+    .about-newsletter input {
+        font-size: 0.8rem;
+    }
+
+    .about-newsletter button {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .about-us {
+        padding: 8rem 3rem 4rem 3rem;
+    }
+
+    .about-us h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-us h2 {
+        font-size: 1rem;
+    }
+
+    .about-us p {
+        font-size: 0.8rem;
+    }
+
+    .about-us ul {
+        font-size: 0.8rem;
+        margin-left: -1rem;
+    }
+
+    .about-us i {
+        font-size: 0.3rem;
+    }
+
+
+    .about-motto {
+        padding: 2rem 4rem;
+    }
+
+    .about-motto p {
+        font-size: 1.8rem;
+    }
+
+
+    .about-team {
+        padding: 2rem;
+    }
+
+    .about-team h2 {
+        font-size: 1rem;
+    }
+
+    .about-team h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .memberName p {
+        font-size: 1rem;
+    }
+
+
+    .about-newsletter {
+        margin: 3rem 2rem 0 2rem;
+        padding: 1.5rem 0;
+    }
+
+    .about-newsletter h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-newsletter p {
+        font-size: 0.8rem;
+    }
+
+    .about-newsletter input {
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .memberName p {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+
+    .memberName:hover {
+        width: 85%;
+    }
+}
+
+@media(max-width: 450px) {
+    .memberName p {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    .memberName:hover {
+        width: 80%;
+    }
+}
