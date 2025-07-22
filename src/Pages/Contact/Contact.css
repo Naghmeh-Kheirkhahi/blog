@@ -1,18 +1,14 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-contact-us {
+    background-color: rgb(253, 232, 255);
 }
 
-
 section {
-    margin: 10rem 0;
-
+    align-items: center;
+    margin: 10rem 5rem 5rem 5rem;
 }
 
 section h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #512b86;
     padding: 0.5rem 0;
@@ -26,23 +22,137 @@ section p {
 .contact-form {
     border: 1px solid #9d78c4;
     border-radius: 10px;
-    background-color: #edddff;
+    background-color: #e2c9ff;
 }
 
 .contact-form label {
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 800;
     color: #6425ae;
 }
 
+.contact-form input,
+textarea {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #686868 !important;
+    background-color: rgb(255, 255, 255);
+}
+
 .contact-form button {
-    margin: 0 20rem;
+    width: 100%;
     padding: 0.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     border: 1px solid rgb(196 0 206);
     border-radius: 10px;
     background-color: rgb(242, 0, 255);
     color: rgb(255, 255, 255);
+}
+
+
+
+@media(max-width: 1400px) {
+    section {
+        margin: 9rem 4rem 5rem 4rem;
+    }
+
+    section h2 {
+        font-size: 2.8rem;
+    }
+
+    section p {
+        font-size: 1.2rem;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    section {
+        margin: 8rem 3rem 4rem 3rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    section {
+        margin: 8rem 5rem 4rem 5rem;
+    }
+
+    section h2 {
+        font-size: 2.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    section {
+        margin: 10rem 4rem 4rem 4rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 576px) {
+    section {
+        margin: 10rem 3rem 4rem 3rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 0.8rem;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.8rem;
+    }
 }

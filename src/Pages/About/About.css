@@ -4,7 +4,7 @@
 
 .about-us {
     align-items: center;
-    padding: 15rem 8rem 10rem 8rem;
+    margin: 15rem 8rem 10rem 8rem;
 }
 
 .about-us h1 {
@@ -204,7 +204,7 @@
 
 @media(max-width: 1400px) {
     .about-us {
-        padding: 12rem 7rem 6rem 7rem;
+        margin: 12rem 7rem 6rem 7rem;
     }
 
     .about-us h1 {
@@ -283,7 +283,7 @@
 
 @media(max-width: 1200px) {
     .about-us {
-        padding: 10rem 6rem 5rem 6rem;
+        margin: 10rem 6rem 5rem 6rem;
     }
 
     .about-us h1 {
@@ -368,7 +368,7 @@
 
 @media(max-width: 992px) {
     .about-us {
-        padding: 10rem 5rem 5rem 5rem;
+        margin: 10rem 5rem 5rem 5rem;
     }
 
     .about-us h1 {
@@ -471,7 +471,7 @@
 
 @media(max-width: 768px) {
     .about-us {
-        padding: 8rem 4rem 4rem 4rem;
+        margin: 8rem 4rem 4rem 4rem;
     }
 
     .about-us h1 {
@@ -554,7 +554,7 @@
 
 @media(max-width: 576px) {
     .about-us {
-        padding: 8rem 3rem 4rem 3rem;
+        margin: 8rem 3rem 4rem 3rem;
     }
 
     .about-us h1 {
