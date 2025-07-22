@@ -7,10 +7,12 @@ import PostList from "./../../Components/Posts/PostList";
 function Blog() {
   return (
     <>
-      <div className="blog-container">
-        <h1>Crystal Blog Posts</h1>
+      <div className="main-blog-page">
+        <div className="blog-container">
+          <h1>Crystal Blog Posts</h1>
 
-        <PostList />
+          <PostList />
+        </div>
       </div>
     </>
   );
