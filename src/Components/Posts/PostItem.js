@@ -8,7 +8,7 @@ import BlogPost from "../../Assets/Images/blogPost.png";
 function PostItem(props) {
     return (
         <>
-            <div className="col-6 lg-col-4" onClick={props.showPost}>
+            <div className="col-6 col-lg-4" onClick={props.showPost}>
                 <div className="post-container">
                     <div>
                         <img src={BlogPost} alt="..." />

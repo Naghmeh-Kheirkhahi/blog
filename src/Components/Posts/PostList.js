@@ -62,13 +62,27 @@ function PostList() {
     return (
         <>
             <div className="post-list">
-                <div className="categories">
+                <div className="categories1">
                     <button onClick={() => handleCategory('category1')}>Category 1</button>
                     <button onClick={() => handleCategory('category2')}>Category 2</button>
                     <button onClick={() => handleCategory('category3')}>Category 3</button>
                     <button onClick={() => handleCategory('category4')}>Category 4</button>
                     <button onClick={() => handleCategory('category5')}>Category 5</button>
                     <button onClick={() => handleCategory('category6')}>Category 6</button>
+                </div>
+
+                <div className="categories2">
+                    <div>
+                        <button onClick={() => handleCategory('category1')}>Category 1</button>
+                        <button onClick={() => handleCategory('category2')}>Category 2</button>
+                        <button onClick={() => handleCategory('category3')}>Category 3</button>
+                    </div>
+                    <br/>
+                    <div>
+                        <button onClick={() => handleCategory('category4')}>Category 4</button>
+                        <button onClick={() => handleCategory('category5')}>Category 5</button>
+                        <button onClick={() => handleCategory('category6')}>Category 6</button>
+                    </div>
                 </div>
 
                 <div className="row">
