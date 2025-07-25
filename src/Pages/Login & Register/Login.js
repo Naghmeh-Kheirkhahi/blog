@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import './Register-Login.css';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../Context/UserContext';
 
@@ -37,15 +37,15 @@ function Login() {
 
     return (
         <>
-            <div className="login-page">
+            <div className="register-login-page">
 
                 {username ? (
-                    <div className='prelogged'>
+                    <div className='prelogged register-login-container'>
                         <p>You have already Logged in as a User.</p>
                         <p>To access the Login Form, please Log out first.</p>
                     </div>
                 ) : (
-                    <div className="login-container">
+                    <div className="register-login-form register-login-container">
                         <h2>Login</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">

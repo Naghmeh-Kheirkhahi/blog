@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Register.css';
+import './Register-Login.css';
 import { UserContext } from '../../Context/UserContext';
 
 
@@ -42,15 +42,15 @@ function Register() {
 
     return (
         <>
-            <div className="register-page">
+            <div className="register-login-page">
 
                 {username ? (
-                    <div className='prelogged'>
+                    <div className='prelogged register-login-container'>
                         <p>You have already Logged in as a User.</p>
                         <p>To access the Login Form, please Log out first.</p>
                     </div>
                 ) : (
-                    <div className="register-container">
+                    <div className="register-login-form register-login-container">
                         <h2>Register</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">

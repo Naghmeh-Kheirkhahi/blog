@@ -1,0 +1,260 @@
+.register-login-page {
+    background-color: rgb(235, 235, 235);
+}
+
+.register-login-container {
+    margin: 20rem auto 10rem auto;
+    padding: 5rem;
+    border: 1px solid rgb(186, 134, 219);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(169 169 169);
+    background-color: rgb(214, 164, 244);
+}
+
+.prelogged {
+    max-width: 60%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #a1005b;
+}
+
+.register-login-form {
+    max-width: 50%;
+}
+
+.register-login-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(86, 11, 134);
+}
+
+.register-login-form form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(86, 11, 134);
+}
+
+.register-login-form form input {
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 134, 219);
+    color: rgb(55, 55, 55);
+}
+
+.register-login-form form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #d400ff;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+.register-login-form form button:hover {
+    background-color: #e600ff;
+}
+
+.register-login-form p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(55, 55, 55);
+}
+
+.register-login-form p a {
+    color: rgb(85, 0, 233);
+}
+
+
+
+@media(max-width: 1400px) {
+    .register-login-container {
+        margin: 18rem auto 9rem auto;
+        padding: 4rem;
+    }
+
+    .prelogged {
+        font-size: 2.2rem;
+    }
+
+    .register-login-form h2 {
+        font-size: 2.8rem;
+    }
+
+    .register-login-form form label {
+        font-size: 1.2rem;
+    }
+
+    .register-login-form form input {
+        font-size: 1.2rem;
+    }
+
+    .register-login-form form button {
+        font-size: 1.2rem;
+    }
+
+    .register-login-form p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .register-login-container {
+        margin: 16rem auto 8rem auto;
+        padding: 3rem;
+    }
+
+    .prelogged {
+        max-width: 65%;
+        font-size: 2rem;
+    }
+
+    .register-login-form {
+        max-width: 55%;
+    }
+
+    .register-login-form h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .register-login-form form label {
+        font-size: 1.1rem;
+    }
+
+    .register-login-form form input {
+        padding: 0.8rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .register-login-form form button {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .register-login-form p {
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .register-login-container {
+        margin: 15rem auto 7rem auto;
+        padding: 2.5rem;
+    }
+
+    .prelogged {
+        font-size: 1.8rem;
+    }
+
+    .register-login-form h2 {
+        font-size: 2.2rem;
+    }
+
+    .register-login-form form label {
+        font-size: 1rem;
+    }
+
+    .register-login-form form input {
+        font-size: 1rem;
+    }
+
+    .register-login-form form button {
+        font-size: 1rem;
+    }
+
+    .register-login-form p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .register-login-container {
+        margin: 14rem auto 7rem auto;
+        padding: 2rem;
+    }
+
+    .prelogged {
+        max-width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .register-login-form {
+        max-width: 60%;
+    }
+
+    .register-login-form h2 {
+        margin-bottom: 1.2rem;
+        font-size: 2rem;
+    }
+
+    .register-login-form form label {
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .register-login-form form input {
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .register-login-form form button {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
+    }
+
+    .register-login-form p {
+        margin-top: 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .register-login-container {
+        margin: 12rem auto 5rem auto;
+        padding: 1.5rem;
+    }
+
+    .prelogged {
+        font-size: 1.2rem;
+    }
+
+    .register-login-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .register-login-form form label {
+        font-size: 0.8rem;
+    }
+
+    .register-login-form form input {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .register-login-form form button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .register-login-form p {
+        font-size: 0.8rem;
+    }
+}
