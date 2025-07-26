@@ -1,32 +1,28 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-page-TandC {
+    background-color: #dac5ff;
 }
 
 .TandC {
-    margin-top: 5rem;
-    padding: 15rem 10rem 10rem 10rem;
-    background-color: #dac5ff;
+    margin: 18rem 10rem 10rem 10rem;
+}
+
+.TandC h1,
+.TandC h3,
+.TandC h5 {
+    padding: 0.5rem 0;
+    text-shadow: none;
 }
 
 .TandC h1 {
     text-align: center;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 3rem;
-    padding: 0.5rem 0;
     color: #4c2591;
 }
 
-.TandC h3 , .TandC h5 {
-    padding: 0.5rem 0;
-    text-shadow: none;
-}
-
 .TandC h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: rgb(60, 60, 60);
     margin-top: 1rem;
@@ -34,13 +30,12 @@
 
 .TandC h5 {
     font-size: 1.5rem;
-    font-weight: 600;
     color: rgb(60, 60, 60);
     line-height: 2.5rem;
 }
 
 .TandC p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(60, 60, 60);
     margin-left: 2rem;
 }
@@ -48,4 +43,127 @@
 .TandC a {
     text-decoration: none;
     color: rgb(60, 60, 60);
+}
+
+
+
+@media(max-width: 1400px) {
+    .TandC {
+        margin: 17rem 10rem 9rem 10rem;
+    }
+
+    .TandC h1 {
+        font-size: 2.8rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .TandC h3 {
+        font-size: 1.6rem;
+    }
+
+    .TandC h5 {
+        font-size: 1.3rem;
+    }
+
+    .TandC p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .TandC {
+        margin: 16rem 9rem 8rem 9rem;
+    }
+
+    .TandC h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .TandC h3 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .TandC h5 {
+        font-size: 1.2rem;
+    }
+
+    .TandC p {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .TandC {
+        margin: 15rem 8rem 7rem 8rem;
+    }
+
+    .TandC h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .TandC h3 {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    .TandC h5 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .TandC p {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .TandC {
+        margin: 13rem 6rem 6rem 6rem;
+    }
+
+    .TandC h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .TandC h3 {
+        font-size: 1.2rem;
+    }
+
+    .TandC h5 {
+        font-size: 1rem;
+    }
+
+    .TandC p {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .TandC {
+        margin: 12rem 4rem 5rem 4rem;
+    }
+
+    .TandC h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .TandC h3 {
+        font-size: 1.1rem;
+    }
+
+    .TandC h5 {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .TandC p {
+        font-size: 0.8rem;
+        margin-left: 1.3rem;
+    }
 }
