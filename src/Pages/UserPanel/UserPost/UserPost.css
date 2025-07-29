@@ -1,60 +1,49 @@
-
-* {
-    padding: 0; 
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
 .main-page {
-    margin-top: 8rem;
-    background-color: #f5c7ff;
+    background-color: #ffd5fb;
 }
-
 
 .main-container {
-    padding: 8rem;
+    padding: 15rem 8rem 8rem 8rem;
 }
 
 .main-container h1 {
     color: #650a74;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 5rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
     text-align: center;
+    padding: 0.5rem 0;
 }
-
 
 
 /* UserPost */
-
 .give-data {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
     text-align: center;
 }
-
 
 .postInfo-form {
     border: 2px solid #c647d7;
     border-radius: 10px;
     background-color: #d56ce4;
-    padding: 5rem;
-    margin: 0 auto;
-    width: 50%;
+    padding: 3rem;
+    margin: auto;
+    width: 60%;
 }
 
 .postInfo-form label {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #41004b;
     font-weight: 600;
 }
 
-.postInfo-form input {
-    padding: 1rem;
+.postInfo-form input,
+.postInfo-form textarea {
+    padding: 0.5rem 1rem;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(48, 48, 48);
     outline: none;
     border-radius: 10px;
@@ -62,25 +51,21 @@
     width: 100%;
 }
 
-
-.light-btn {
+.postInfo-btn {
     width: 100%;
-    padding: 1rem 0;
-    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 1.5rem auto 0 auto;
-    background-color: #6327d2; 
+    margin: 1rem auto 0 auto;
+    background-color: #6327d2;
     border: none;
     color: #ffffff;
     border-radius: 10px;
 }
 
 
-
 /* Post Preview */
-
 .post-preview {
-    padding: 0 2rem;
     cursor: pointer;
     width: 50%;
     margin: auto;
@@ -96,7 +81,7 @@
 .post-pre-info {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: rgb(70, 70, 70);
 }
@@ -105,11 +90,11 @@
     border: 1px solid rgb(179, 179, 255);
     background-color: rgb(179, 179, 255);
     border-radius: 10px;
-    padding: 1rem 1.5rem;
+    padding: 0.7rem 1.3rem;
 }
 
 .post-pre-author {
-    padding: 1rem 1.5rem;
+    padding: 0.7rem 1.3rem;
 }
 
 .post-pre-author span {
@@ -125,21 +110,326 @@
 }
 
 .post-pre-description {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(63, 63, 63);
     padding-bottom: 1rem;
-    text-align: left;
 }
 
 .post-pre-date {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: rgb(88, 88, 88);
     padding: 0 0.5rem;
 }
 
 .post-pre-date i {
-    padding: 1rem 0.2rem 0 0;
+    padding: 0.1rem 0.2rem;
+    margin-bottom: -0.2rem;
+}
+
+
+
+@media(max-width: 1400px) {
+    .main-container {
+        padding: 15rem 6rem 8rem 6rem;
+    }
+
+    .main-container h1 {
+        font-size: 2.2rem;
+    }
+
+    /* UserPost */
+    .give-data {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .postInfo-form {
+        padding: 2.5rem;
+        width: 65%;
+    }
+
+    .postInfo-form label {
+        font-size: 1.2rem;
+    }
+
+    .postInfo-form input,
+    .postInfo-form textarea {
+        margin-bottom: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    .postInfo-btn {
+        font-size: 1.4rem;
+    }
+
+    /* Post Preview */
+    .post-preview {
+        width: 60%;
+    }
+
+    .post-pre-info {
+        font-size: 1.1rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.8rem;
+    }
+
+    .post-pre-description {
+        font-size: 1.2rem;
+    }
+
+    .post-pre-date {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .main-container {
+        padding: 13rem 5rem 7rem 5rem;
+    }
+
+    .main-container h1 {
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    /* UserPost */
+    .give-data {
+        font-size: 1.1rem;
+    }
+
+    .postInfo-form {
+        padding: 2rem;
+        width: 70%;
+    }
+
+    .postInfo-form label {
+        font-size: 1.1rem;
+    }
+
+    .postInfo-form input,
+    .postInfo-form textarea {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .postInfo-btn {
+        font-size: 1.3rem;
+    }
+
+    /* Post Preview */
+    .post-preview {
+        width: 65%;
+    }
+
+    .post-pre-info {
+        font-size: 1rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.5rem;
+    }
+
+    .post-pre-description {
+        font-size: 1.1rem;
+    }
+
+    .post-pre-date {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .main-container {
+        padding: 13rem 4rem 6rem 4rem;
+    }
+
+    .main-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    /* UserPost */
+    .give-data {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .postInfo-form {
+        padding: 1.5rem;
+        width: 80%;
+    }
+
+    .postInfo-form label {
+        font-size: 1rem;
+    }
+
+    .postInfo-form input,
+    .postInfo-form textarea {
+        font-size: 1rem;
+    }
+
+    .postInfo-btn {
+        font-size: 1.2rem;
+    }
+
+    /* Post Preview */
+    .post-preview {
+        width: 70%;
+    }
+
+    .post-pre-info {
+        font-size: 0.9rem;
+    }
+
+    .post-pre-category {
+        padding: 0.5rem 1rem;
+    }
+
+    .post-pre-author {
+        padding: 0.5rem 1rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.3rem;
+    }
+
+    .post-pre-description {
+        font-size: 1rem;
+    }
+
+    .post-pre-date {
+        font-size: 0.9rem;
+        padding: 0 0.3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .main-container {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .main-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* UserPost */
+    .give-data {
+        font-size: 0.9rem;
+    }
+
+    .postInfo-form {
+        width: 90%;
+    }
+
+    .postInfo-form label {
+        font-size: 0.9rem;
+    }
+
+    .postInfo-form input,
+    .postInfo-form textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .postInfo-btn {
+        font-size: 1.1rem;
+        margin: 0.5rem auto 0 auto;
+    }
+
+    /* Post Preview */
+    .post-preview {
+        width: 80%;
+    }
+}
+
+@media(max-width: 650px) {
+
+    /* Post Preview */
+    .post-preview {
+        width: 85%;
+    }
+
+    .post-pre-info {
+        font-size: 0.8rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.2rem;
+    }
+
+    .post-pre-description {
+        font-size: 0.9rem;
+    }
+
+    .post-pre-date {
+        font-size: 0.8rem;
+        padding: 0 0.2rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-container {
+        padding: 11rem 1.5rem 5rem 0;
+    }
+
+    .main-container h1 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* UserPost */
+    .give-data {
+        font-size: 0.8rem;
+    }
+
+    .postInfo-form {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .postInfo-form label {
+        font-size: 0.8rem;
+    }
+
+    .postInfo-form input,
+    .postInfo-form textarea {
+        font-size: 0.8rem;
+    }
+
+    .postInfo-btn {
+        font-size: 1rem;
+    }
+
+    /* Post Preview */
+    .post-preview {
+        width: 90%;
+    }
+}
+
+@media(max-width: 450px) {
+
+    /* Post Preview */
+    .post-pre-info {
+        font-size: 0.7rem;
+    }
+
+    .post-preview h3 {
+        font-size: 1.1rem;
+    }
+
+    .post-pre-description {
+        font-size: 0.8rem;
+    }
+
+    .post-pre-date {
+        font-size: 0.7rem;
+        padding: 0 0.1rem;
+    }
 }

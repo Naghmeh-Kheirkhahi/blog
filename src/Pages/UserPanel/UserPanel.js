@@ -16,11 +16,11 @@ function UserPanel() {
         <>
             <div className="userpanel-page">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-5 col-md-4 col-lg-3">
                         <UserPanelNav />
                     </div>
 
-                    <div className="col-9">
+                    <div className="col-7 col-md-8 col-lg-9">
                         <div className="userpanel-dashboard">
                             <div className="dashboard-description">
                                 <h3>Hello {username}!</h3>
@@ -30,17 +30,17 @@ function UserPanel() {
 
                             <div className="userpanel-content">
                                 <div className="row">
-                                    <div className="col-4 p-5">
+                                    <div className="col-12 col-md-4 p-md-3 p-lg-4 p-xl-5">
                                         <Link to='/UserPanel/PostInfo'><i class='fas fa-info-circle'></i>
                                             <p>Post Information</p></Link>
                                     </div>
 
-                                    <div className="col-4 p-5">
+                                    <div className="col-12 col-md-4 p-md-3 p-lg-4 p-xl-5">
                                         <Link to='/UserPanel/PostPreview'><i class='fas fa-blog'></i>
                                             <p>Post Preview</p></Link>
                                     </div>
 
-                                    <div className="col-4 p-5">
+                                    <div className="col-12 col-md-4 p-md-3 p-lg-4 p-xl-5">
                                         <Logout />
                                     </div>
                                 </div>

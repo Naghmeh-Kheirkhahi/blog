@@ -42,11 +42,11 @@ function PostInfo() {
         <>
             <div className='main-page'>
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-5 col-md-4 col-lg-3">
                         <UserPanelNav />
                     </div>
 
-                    <div className="col-9">
+                    <div className="col-7 col-md-8 col-lg-9">
                         <div className="main-container">
                             <h1>My Post Information</h1>
 
@@ -67,7 +67,7 @@ function PostInfo() {
                                 <input type="text" name="author" value={post.author} placeholder="Naghmeh" onChange={handleChange} />
 
                                 <label for="description">Description</label>
-                                <input type="text" name="description" value={post.description} placeholder="Germany includes many cities..." onChange={handleChange} />
+                                <textarea type="text" name="description" value={post.description} placeholder="Germany includes many cities..." onChange={handleChange} />
 
                                 <label for="date">Date</label>
                                 <input type="date" name="date" value={post.date} onChange={handleChange} />
@@ -75,7 +75,7 @@ function PostInfo() {
                                 <label for="readTime">Read Time in Min </label>
                                 <input type="number" name="readTime" value={post.readTime} placeholder="1" onChange={handleChange} />
 
-                                <button type="submit" className="light-btn">Submit</button>
+                                <button type="submit" className="postInfo-btn">Submit</button>
                             </form>
                         </div>
                     </div>

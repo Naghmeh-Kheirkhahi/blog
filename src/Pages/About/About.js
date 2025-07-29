@@ -10,6 +10,7 @@ import person6 from './../../Assets/Images/team-6.jpg';
 import person7 from './../../Assets/Images/team-7.jpg';
 import person8 from './../../Assets/Images/team-8.jpg';
 import crystal from './../../Assets/Images/crystal.JPG';
+import Newsletter from "../../Components/Newsletter/Newsletter";
 
 
 
@@ -51,7 +52,7 @@ function About() {
           <p>We invite you to explore our blog, engage with our content, and become a part of our growing community. Whether you're seeking to advance your career, explore new subjects, or simply satisfy your curiosity, <b>Crystal Blog</b> is here to support you every step of the way.</p>
 
           <p>Thank you for visiting <b>Crystal Blog</b>. Together, let's embark on a journey of knowledge, discovery, and personal growth!</p>
-          <br/>
+          <br />
 
           <div className="about-motto">
             <p>You Can Read and Write with <b>Crystal</b>.</p>
@@ -125,18 +126,9 @@ function About() {
             </div>
           </div>
 
-
-          <div className="about-newsletter">
-            <h2>Subscribe to Newsletter</h2>
-
-            <p>Subscribe to our newsletter and get our newest updates right on your mailbox.</p>
-
-            <form>
-              <input type="text" placeholder="Enter your email" />
-              <button>Subscribe Now</button>
-            </form>
+          <div>
+            <Newsletter />
           </div>
-
         </div>
       </div>
     </>

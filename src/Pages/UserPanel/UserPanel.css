@@ -1,41 +1,17 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .userpanel-page {
-    margin-top: 8rem;
     background-color: #ffd5fb;
 }
 
-/* ThemeContext */
-/* .dark-user-panel {
-    margin-top: 8rem;
-    background-color: #d9afe2;
-} */
-
-
 /* userpanel navbar (the left side) */
-
 .userpanel-menu {
     background-color: #d100c0;
-    padding: 5rem 2rem;
+    padding: 12rem 2rem 5rem 2rem;
     height: 100%;
 }
 
-/* ThemeContext */
-/* .dark-list {
-    background-color: #350042;
-    padding: 5rem 2rem;
-    height: 100%;
-} */
-
-
 .userpanel-menu h1 {
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 3rem;
     text-align: center;
@@ -57,21 +33,18 @@
 
 .userpanel-image p {
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 1rem auto 3rem auto;
 }
 
-
-
 .userpanel-nav ul {
     list-style: none;
-    margin-left: 3rem;
 }
 
 .userpanel-nav ul li {
     margin-bottom: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -83,15 +56,13 @@
 }
 
 .userpanel-nav ul i {
-    padding: 0.3rem 1rem 0.1rem 0; 
+    padding: 0.3rem 1rem 0.1rem 0;
     margin-bottom: -0.5rem;
 }
 
-
 /* userpanel dashboard (the right side) */
-
 .userpanel-dashboard {
-    padding: 10rem 8rem 5rem 8rem;
+    padding: 15rem 8rem 5rem 8rem;
 }
 
 .dashboard-description {
@@ -100,16 +71,14 @@
 
 .dashboard-description h3 {
     color: #422b98;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     text-shadow: none;
 }
 
 .dashboard-description p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
-
 
 .userpanel-content {
     text-align: center;
@@ -120,13 +89,314 @@
 }
 
 .userpanel-content a p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: rgb(72 72 72);
 }
 
 .userpanel-content a i {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #dd00ca;
-    padding: 1rem 0;
+    padding: 1rem 0.1rem;
+}
+
+
+
+@media(max-width: 1400px) {
+
+    /* userpanel navbar (the left side) */
+    .userpanel-menu {
+        padding: 11rem 1.5rem 5rem 1.5rem;
+    }
+
+    .userpanel-menu h1 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .userpanel-image {
+        margin-bottom: 4rem;
+    }
+
+    .userpanel-image img {
+        width: 45%;
+    }
+
+    .userpanel-image p {
+        font-size: 1.8rem;
+        margin: 1rem auto 2rem auto;
+    }
+
+    .userpanel-nav ul li {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    /* userpanel dashboard (the right side) */
+    .userpanel-dashboard {
+        padding: 15rem 6rem 5rem 6rem;
+    }
+
+    .dashboard-description {
+        margin-bottom: 5rem;
+    }
+
+    .dashboard-description h3 {
+        font-size: 1.8rem;
+    }
+
+    .dashboard-description p {
+        font-size: 1.2rem;
+    }
+
+    .userpanel-content a p {
+        font-size: 1.2rem;
+    }
+
+    .userpanel-content a i {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    /* userpanel navbar (the left side) */
+    .userpanel-menu {
+        padding: 10rem 1rem 4rem 1rem;
+    }
+
+    .userpanel-menu h1 {
+        font-size: 2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .userpanel-image {
+        margin-bottom: 3rem;
+    }
+
+    .userpanel-image img {
+        width: 50%;
+    }
+
+    .userpanel-image p {
+        font-size: 1.5rem;
+        margin: 1rem auto 1.5rem auto;
+    }
+
+    .userpanel-nav ul li {
+        font-size: 1rem;
+    }
+
+    /* userpanel dashboard (the right side) */
+    .userpanel-dashboard {
+        padding: 13rem 5rem 4rem 5rem;
+    }
+
+    .dashboard-description {
+        margin-bottom: 4rem;
+    }
+
+    .dashboard-description h3 {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-description p {
+        font-size: 1rem;
+    }
+
+    .userpanel-content a p {
+        font-size: 1rem;
+    }
+
+    .userpanel-content a i {
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width: 992px) {
+
+    /* userpanel navbar (the left side) */
+    .userpanel-menu {
+        padding: 10rem 1rem 3rem 1rem;
+    }
+
+    .userpanel-menu h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .userpanel-image {
+        margin-bottom: 2.5rem;
+    }
+
+    .userpanel-image img {
+        width: 45%;
+    }
+
+    .userpanel-image p {
+        font-size: 1.3rem;
+        margin: 0.7rem auto 1.3rem auto;
+    }
+
+    .userpanel-nav ul {
+        margin-left: 1.5rem;
+    }
+
+    .userpanel-nav ul li {
+        font-size: 0.9rem;
+    }
+
+    .userpanel-nav ul i {
+        padding: 0.2rem 0.8rem 0.1rem 0;
+    }
+
+    /* userpanel dashboard (the right side) */
+    .userpanel-dashboard {
+        padding: 13rem 4rem 3rem 4rem;
+    }
+
+    .dashboard-description {
+        margin-bottom: 4rem;
+    }
+
+    .dashboard-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .dashboard-description p {
+        font-size: 0.9rem;
+    }
+
+    .userpanel-content a p {
+        font-size: 0.9rem;
+    }
+
+    .userpanel-content a i {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .userpanel-nav ul {
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+
+    /* userpanel navbar (the left side) */
+    .userpanel-menu {
+        padding: 9rem 1rem 2rem 1rem;
+    }
+
+    .userpanel-menu h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .userpanel-image {
+        margin-bottom: 2rem;
+    }
+
+    .userpanel-image img {
+        width: 50%;
+    }
+
+    .userpanel-image p {
+        font-size: 1rem;
+        margin: 0.5rem auto 1rem auto;
+    }
+
+    .userpanel-nav ul {
+        margin-left: 0;
+    }
+
+    .userpanel-nav ul li {
+        font-size: 0.8rem;
+    }
+
+    .userpanel-nav ul i {
+        padding: 0.1rem 0.7rem 0.1rem 0;
+        margin-bottom: -0.4rem;
+    }
+
+    /* userpanel dashboard (the right side) */
+    .userpanel-dashboard {
+        padding: 12rem 2rem 2rem 2rem;
+    }
+
+    .dashboard-description {
+        margin-bottom: 3rem;
+    }
+
+    .dashboard-description h3 {
+        font-size: 1rem;
+    }
+
+    .dashboard-description p {
+        font-size: 0.8rem;
+    }
+
+    .userpanel-content a p {
+        font-size: 0.8rem;
+    }
+
+    .userpanel-content a i {
+        font-size: 1.5rem;
+        margin-bottom: -0.7rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .userpanel-nav ul {
+        margin-left: -1rem;
+    }
+}
+
+@media(max-width: 576px) {
+    /* userpanel navbar (the left side) */
+    .userpanel-menu {
+        padding: 8rem 1rem 1rem 1rem;
+    }
+
+    .userpanel-menu h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .userpanel-image {
+        margin-bottom: 1.5rem;
+    }
+
+    .userpanel-image img {
+        width: 45%;
+    }
+
+    .userpanel-nav ul {
+        margin-left: 0;
+    }
+
+    .userpanel-nav ul i {
+        padding: 0.1rem 0.6rem 0.1rem 0;
+        margin-bottom: -0.3rem;
+    }
+
+    /* userpanel dashboard (the right side) */
+    .userpanel-dashboard {
+        padding: 11rem 1rem 2rem 1rem;
+    }
+
+    .dashboard-description {
+        margin-bottom: 2rem;
+    }
+
+    .userpanel-content a i {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .userpanel-nav ul {
+        margin-left: -1rem;
+    }
 }

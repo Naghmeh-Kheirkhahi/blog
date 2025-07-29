@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import PostItem from "../../Components/Posts/PostItem";
+import Newsletter from "../../Components/Newsletter/Newsletter";
 
 
 
@@ -28,7 +29,7 @@ function Home() {
 
 
 
-  
+
   const scrollLeftPopular = () => {
     document.querySelector('.popularPosts .row').scrollBy({
       left: -700,
@@ -65,7 +66,6 @@ function Home() {
   return (
     <>
       <div className="home">
-
         <div>
           <h1>Crystal Blog</h1>
 
@@ -75,10 +75,7 @@ function Home() {
           <h4>Advice, Information, Resource</h4>
         </div>
 
-
         <Link to="/Login">Login</Link>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-
       </div>
 
 
@@ -139,16 +136,8 @@ function Home() {
         </div>
       </div>
 
-
-      <div className="newsletter">
-        <h2>Subscribe to Newsletter</h2>
-
-        <p>Subscribe to our newsletter and get our newest updates right on your mailbox.</p>
-
-        <form>
-          <input type="text" placeholder="Enter your email" />
-          <button>Subscribe Now</button>
-        </form>
+      <div className="newsletter-part">
+        <Newsletter />
       </div>
     </>
   );

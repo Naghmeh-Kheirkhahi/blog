@@ -15,11 +15,11 @@ function PostPreview() {
         <>
             <div className='main-page'>
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-5 col-md-4 col-lg-3">
                         <UserPanelNav />
                     </div>
 
-                    <div className="col-9">
+                    <div className="col-7 col-md-8 col-lg-9">
                         <div className="main-container">
                             <h1>My Preview Post</h1>
 
@@ -28,7 +28,7 @@ function PostPreview() {
                                     <img src={post.image || BlogPost} alt="blog post" />
                                 </div>
 
-                                <div className="pt-4">
+                                <div className="pt-3 pt-lg-4">
                                     <div className="post-pre-info">
                                         <p className="post-pre-category">{post.category || 'Category'}</p>
                                         <p className="post-pre-author"><span>By</span> {post.author || 'Author'}</p>
